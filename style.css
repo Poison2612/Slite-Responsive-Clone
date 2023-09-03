@@ -1,0 +1,270 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    background-color: #F7E3EA;
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ------------------------NavBar----------------------- */
+nav{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 26vw;
+    box-shadow: 0px -1px 5px #000;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.nav-items>h4{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+button{
+    height: 45.5px;
+    width: 134px;
+    border-radius: 52px;
+    border: 1px solid;
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+button.transparent{
+    background-color: transparent;
+    border-color: #000;
+}
+
+button.blue{
+    background-color: #176ae5;
+    border-color: #176AE5;
+    color: #fff;
+}
+
+i.ri-menu-3-line{
+    font-weight: 600;
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    nav{
+        height: 70px;
+    }
+    .nav-items>h4,.nav-button{
+        display: none;
+    }
+
+    i.ri-menu-3-line{
+        display: inline-block;
+    }
+
+    
+}
+
+/* ---------------Intro-Section---------------------- */
+
+.hero{
+    /* height: calc(100vh - 80px); */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+    padding: 6vw  6vw;
+}
+
+.hero-upper{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+
+}
+
+.hero-upper>h1{
+    font-size: 5vmax;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -1;
+    width: 56vw;
+    /* margin-top: 7.5vw; */
+}
+.hero-upper>p{
+    font: 1.2vmax;
+    font-weight: 500;
+    text-align: center;
+}
+.hero-upper>button{
+    height: 4vmax;
+    width: 17.7vw;
+
+}
+
+.hero-lower{
+    height: 50%;
+
+}
+
+.hero-lower>img{
+    width: 90%;
+    margin: auto 3vmax ;
+}
+
+/* ----------------------------------Sec-1---------------------------- */
+
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    margin: 5.5vw 9.7vw;
+
+
+}
+
+.sec-1-head{
+    margin-bottom: 3vmax;
+}
+ .sec-1-head>h2{
+    font-size: 3vmax;
+    font-weight: 500;
+    text-align: center;
+ }
+ .sec-1-head>p{
+    font-size: 1.2vmax;
+    font-weight: 400;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    
+ }
+
+
+
+/* Add your CSS rules for styling here */
+.sec-1-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    padding:1vw 15vw ;
+}
+
+.card {
+    width: 33.3vmax;
+    height: 27.7vmax;
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap : 4vw;
+    padding: 3vmax 3vmax;
+    box-shadow: 0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: .9vmax;
+}
+
+.card-text>h3{
+    font-size: 1.5vmax;
+    font-weight: 500;
+
+}
+
+.card-text>p{
+    font-size: 1vmax;
+    font-weight: 500;
+
+}
+
+.card>img{
+    height: 7.6vmax;
+    width: 12vmax;
+}
+
+.card#white{
+    background-color: #fff;
+    border-color: #fff;
+
+}
+
+.card#transparent{
+    background-color: transparent;
+    border-color: #000;
+
+}
+
+.card#blue{
+    background-color:  rgba(23, 106, 229, 1);
+    border-color:  rgba(23, 106, 229, 1);
+
+}
+
+.card#pink{
+    background-color: rgba(238, 186, 203, 1);
+    border-color: rgba(238, 186, 203, 1);
+
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .sec-1-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sec-1-foot{
+    width: 52vw;
+    height: 7.2vw;
+    display: flex;
+    gap: 5.5vmax;
+    margin: 15.2vw 24.3vw 7vw 24.3vw;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.footsq{
+    
+}
+
+.footsq>h1{
+    font-size: 3vmax;
+    font-weight: 500;
+    text-align: center;
+}
+.footsq>h5{
+    font-size: 1.3vmax;
+    font-weight: 500;
+    text-align: center;
+}
